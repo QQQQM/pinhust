@@ -30,7 +30,7 @@
     </view>
   </scroll-view >
 
-  <navigator wx:if="{{getaddress}}" url="/pages/submit/submit?la={{latitude}}&lo={{longitude}}&num={{change}}&img={{noticedataset[change].img}}&address={{address}}" >
+  <navigator wx:if="{{getaddress}}" url="/pages/submit/submit?la={{latitude}}&lo={{longitude}}&num={{change}}&img={{noticedataset[change].img}}&address={{address}}&noticename={{noticedataset[change].name}}" >
     <button wx:if="{{change == -1}}" plain class="btn1" disabled>下一步</button>
     <button wx:else plain class="btn1" >下一步</button>
   </navigator>  

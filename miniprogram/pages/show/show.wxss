@@ -1,6 +1,8 @@
 .row .nana{
   height: 300rpx;
-  border-top: 1px solid #ccc;
+  border-bottom: 2px solid #FFD45A;
+  border-left: 2px solid #FFD45A;
+  border-right: 2px solid #FFD45A;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,7 +15,11 @@
 }
 .row .title{
   font-size: 50rpx;
-  
+}
+.firstline{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 .row .pic{
   padding: 30rpx;

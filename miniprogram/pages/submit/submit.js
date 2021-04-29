@@ -19,6 +19,7 @@ Page({
     hasphoto: false,
     photo:"/images/photoorg.png",
     img:"/images/1-h.png",
+    noticename:"",
     //存入数据库的信息
     submitdata:{
       time:"",
@@ -30,7 +31,9 @@ Page({
       location1:"",
       location2:"",
       location3:"",
-      userimg:""
+      userimg:"",
+      noticenum:"",
+      noticename:""
     },
     //地图数据
     markers: [{
@@ -96,8 +99,10 @@ Page({
     var content1 = res.detail.value.suggestion
     var name1 = this.data.userInfo.nickName
     var userimg1 = this.data.userInfo.avatarUrl
+    var noticenum1 = this.data.num
     var title1 = res.detail.value.title
     var name = 'submitdata.name'
+    var noticenum = 'submitdata.noticenum'
     var userimg = 'submitdata.userimg'
     var content = 'submitdata.content'
     var title = 'submitdata.title'
@@ -117,7 +122,9 @@ Page({
       [time]:Date.now(),
       [location1]:location11,
       [location2]:location22,
-      [location3]:location33
+      [location3]:location33,
+      [noticenum]:noticenum1,
+
     })
     if(this.data.hasphoto){
       this.cloudFile(this.data.photo)
@@ -146,12 +153,14 @@ Page({
     var address = 'submitdata.address'
     var latitude = 'submitdata.latitude'
     var longitude = 'submitdata.longitude'
+    var noticename = 'submitdata.noticename'
     var getlatitude = e.la
     var getlongitude = e.lo
     var getnum = e.num
     var getimg = e.img
     var getaddress = e.address
-    console.log(getlatitude,getlongitude,getnum,getimg,getaddress)
+    var getnoticename = e.noticename
+    console.log(getlatitude,getlongitude,getnum,getimg,getaddress,getnoticename)
 
     this.setData({
       latitude:getlatitude,
@@ -161,6 +170,7 @@ Page({
       [address]:getaddress,
       [latitude]:getlatitude,
       [longitude]:getlongitude,
+      [noticename]:getnoticename
       
     })
     if (wx.getUserProfile) {

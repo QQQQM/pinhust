@@ -12,11 +12,16 @@
 
 
   <view class="row" wx:for="{{datalist}}" wx:key="index">
-    <navigator class="nana" url="/pages/detail/detail?title={{item.title}}&name={{item.name}}&address={{item.address}}&location1={{item.location1}}&location2={{item.location2}}&location3={{item.location3}}&content={{item.content}}&img={{item.img}}&userimg={{item.userimg}}">
+    <navigator class="nana" url="/pages/detail/detail?title={{item.title}}&name={{item.name}}&address={{item.address}}&location1={{item.location1}}&location2={{item.location2}}&location3={{item.location3}}&content={{item.content}}&img={{item.img}}&userimg={{item.userimg}}&noticename={{item.noticename}}">
       <view class="wenzi">
         <view wx:if="{{item.title.length>0}}" class="title">{{item.title}}</view>
         <view wx:else class="title">暂无标题</view>
-        <view class="intro">建议人：{{item.name}}</view>
+
+        <view class="firstline">
+          <view class="intro">建议人：{{item.name}}</view>
+          <view class="intro" style="font-weight:bold;color:#">{{item.noticename}}</view>
+        </view>
+
         <view wx:if="{{item.address.length>0}}" class="intro">{{item.address}}</view>
         <view class="intro">{{item.location1}}-{{item.location2}}-{{item.location3}}</view>
       </view>

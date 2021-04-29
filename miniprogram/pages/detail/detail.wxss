@@ -33,6 +33,7 @@
   flex-flow: column nowrap;
   margin-top: 50rpx;
   padding-left: 50rpx;
+  padding-right: 50rpx;
   padding-top: 20rpx;
   padding-bottom: 50rpx;
   justify-items: center;
@@ -58,4 +59,9 @@
   flex-flow: column nowrap;  
   justify-items: center;
   justify-content: center;
+}
+.firstline{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }

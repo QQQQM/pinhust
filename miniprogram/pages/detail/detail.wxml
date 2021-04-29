@@ -3,7 +3,10 @@
     <view wx:if="{{datalist.title.length>0}}" class="title">{{datalist.title}}</view>
     <view wx:else class="title">暂无标题</view>
 
-    <view class="intro">建议人：{{datalist.name}}</view>
+    <view class="firstline">
+          <view class="intro">建议人：{{datalist.name}}</view>
+          <view class="intro" style="font-weight:bold;color:#">{{datalist.noticename}}</view>
+    </view>
     <view wx:if="{{datalist.address.length>0}}" class="intro">{{datalist.address}}</view>
     <view class="intro">{{datalist.location1}}-{{datalist.location2}}-{{datalist.location3}}</view>
   </view>

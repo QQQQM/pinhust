@@ -1,0 +1,20 @@
+<view class="box">
+  <view class="wenzi">
+    <view wx:if="{{datalist.title.length>0}}" class="title">{{datalist.title}}</view>
+    <view wx:else class="title">暂无标题</view>
+
+    <view class="intro">建议人：{{datalist.name}}</view>
+    <view wx:if="{{datalist.address.length>0}}" class="intro">{{datalist.address}}</view>
+    <view class="intro">{{datalist.location1}}-{{datalist.location2}}-{{datalist.location3}}</view>
+  </view>
+  <view>
+    <image src="{{datalist.userimg}}" class="userimg"></image>
+  </view>
+</view>
+  <view class="neirong">
+    <view>{{datalist.content}}</view>
+  </view>
+  <view class="tupian">
+    <image src="{{datalist.img}}" class="pic" mode="aspectFill"></image>
+  </view>
+

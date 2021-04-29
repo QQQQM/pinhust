@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/discuss/discuss",
+    "pages/submit/submit",
+    "pages/show/show",
+    "pages/manage/manage",
+    "pages/detail/detail"
+  ],
+  "permission": {
+    
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "PinHust",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#FFD45A",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "PinHust",
+      "iconPath": "images/1.png",
+      "selectedIconPath": "images/1-h.png"
+    },{
+      "pagePath": "pages/discuss/discuss",
+      "text": "留言板",
+      "iconPath": "images/2.png",
+      "selectedIconPath": "images/2-h.png"
+    },{
+      "pagePath": "pages/home/home",
+      "text": "我的主页",
+      "iconPath": "images/3.png",
+      "selectedIconPath": "images/3-h.png"
+    }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

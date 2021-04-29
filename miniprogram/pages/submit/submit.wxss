@@ -1,0 +1,55 @@
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 0rpx;
+}
+
+.box{
+  padding: 2rpx;
+  display: flex;
+  flex-flow: row wrap;
+  height: 300rpx;
+  justify-content: space-between;
+}
+.titleinput{
+  padding:10rpx;
+  padding-left: 50rpx;
+  width: 1000rpx;
+  height: 40rpx;
+  
+  border-bottom:1px solid #e0e0e0;
+  border-top:1px solid #e0e0e0;
+}
+.textinput{
+  padding:50rpx;
+  width: 330rpx;
+  height: 200rpx;
+  /* border:1px solid #e0e0e0 */
+}
+
+.photo{
+  width: 300rpx;
+  height: 300rpx;
+  border:1px solid #e0e0e0
+}
+.photoimage{
+  width: 300rpx;
+  height: 300rpx;
+}
+.icon{
+  margin-top: 80rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.nickname{
+  margin-left: 20rpx;
+  color: #FFD45A;
+}
+.picker{
+  margin-left: 20rpx;
+}
+.section {
+  margin: 20rpx;
+}
+.btn1{
+  margin-top: 50rpx;
+}

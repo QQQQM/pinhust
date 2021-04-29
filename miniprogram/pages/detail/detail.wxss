@@ -1,0 +1,61 @@
+.wenzi{
+  display: flex;
+  flex-flow: column nowrap;  
+  justify-items: center;
+  justify-content: center;
+}
+.box{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  border-bottom: 20rpx solid #FFD45A  ;
+  padding-left: 50rpx;
+  padding-top: 20rpx;
+  padding-bottom: 50rpx;
+  padding-right: 50rpx;
+  margin-top: 50rpx;
+
+
+}
+.title{
+  font-size: 50rpx;
+  margin-top: 10rpx;
+}
+
+.intro{
+  margin-top: 10rpx;
+  font-size: 25rpx;
+}
+
+.neirong{
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 50rpx;
+  padding-left: 50rpx;
+  padding-top: 20rpx;
+  padding-bottom: 50rpx;
+  justify-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+}
+
+.tupian{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+  margin: 20rpx;
+  border:2rpx solid #593A25;
+  border-radius: 30rpx;
+}
+.userimg{
+  margin-top: 20rpx;
+  height: 150rpx;
+  width: 150rpx;
+  display: flex;
+  flex-flow: column nowrap;  
+  justify-items: center;
+  justify-content: center;
+}

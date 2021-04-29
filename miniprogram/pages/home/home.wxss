@@ -1,0 +1,41 @@
+/**index.wxss**/
+.container{
+  height: 250rpx;
+  /* border: 2px solid red; */
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #593A25;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.tab{
+  padding-left: 50rpx ;
+  height: 150rpx;
+  border-bottom: 1px solid #593A25;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tabhovor{
+  background:#FFD45A;
+}

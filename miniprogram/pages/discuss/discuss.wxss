@@ -1,0 +1,47 @@
+.row .nana{
+  height: 300rpx;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row .wenzi{
+  margin-left: 30rpx;
+  justify-items: center;
+  align-items: center;
+}
+.row .title{
+  font-size: 50rpx;
+  
+}
+.row .pic{
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 300rpx;
+  width: 300rpx;
+}
+.intro{
+  font-size: 25rpx;
+  margin-top:10rpx
+}
+
+.section{
+  padding: 10rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.selectarea{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  color:#593A25;
+  border: 2rpx solid #FFD45A;
+  border-radius: 50px
+}

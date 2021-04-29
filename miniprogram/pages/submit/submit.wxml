@@ -1,0 +1,49 @@
+<view class="page-body">
+  <view class="page-section page-section-gap">
+    <map
+      id="myMap"
+      style="width: 100%; height: 300px;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      covers="{{covers}}"
+      show-location
+    ></map>
+  </view>
+
+  <view class="section">
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="picker">
+        选择具体位置：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+      </view>
+    </picker>
+  </view>
+
+  
+  <form bindsubmit="btsub">
+    <view class="box">
+      <textarea name="title" class="titleinput" placeholder="请输入你的标题吧！"></textarea>
+      <textarea name="suggestion" class="textinput" placeholder="请输入你的意见吧！"></textarea>
+      <view class="photo" bindtap="uploadphoto">
+        <image src="{{photo}}" class="photoimage"></image>
+      </view>
+    </view>
+
+    <view>
+      <image class="icon" src="{{img}}"></image>
+      <text class="nickname" >{{userInfo.nickName}}</text>
+      <block wx:if="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" class="btn1" bindtap="getUserProfile"> 获取昵称 </button>
+        <button wx:else open-type="getUserInfo" class="btn1" bindgetuserinfo="getUserInfo"> 提交 </button>
+      </block>
+      <block wx:else>
+        <button class="btn1" form-type="submit">提交</button>
+        <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+      </block>
+    </view>
+  </form>
+
+
+  
+</view>

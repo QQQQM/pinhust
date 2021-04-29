@@ -11,13 +11,13 @@
     <view class="intro">{{datalist.location1}}-{{datalist.location2}}-{{datalist.location3}}</view>
   </view>
   <view>
-    <image src="{{datalist.userimg}}" class="userimg"></image>
+    <image src="{{datalist.userimg}}" bindtap="fangda" data-id="{{datalist.userimg}}"  class="userimg"></image>
   </view>
 </view>
   <view class="neirong">
     <view>{{datalist.content}}</view>
   </view>
   <view class="tupian">
-    <image src="{{datalist.img}}" class="pic" mode="aspectFill"></image>
+    <image src="{{datalist.img}}" bindtap="fangda" data-id="{{datalist.img}}" class="pic" mode="aspectFill"></image>
   </view>
 

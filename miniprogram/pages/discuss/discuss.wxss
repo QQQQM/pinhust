@@ -10,6 +10,7 @@
 
 .row .wenzi{
   margin-left: 30rpx;
+  width: 400rpx;
   justify-items: center;
   align-items: center;
 }
